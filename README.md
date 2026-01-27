@@ -17,13 +17,32 @@ To write a program to predict the marks scored by a student using the simple lin
 ```
 /*
 Program to implement the simple linear regression model for predicting the marks scored.
-Developed by: 
-RegisterNumber:  
+Developed by: SHAJIVE KUMAR J
+RegisterNumber:  25018897
 */
 ```
+import numpy as np
+from sklearn.linear_model import LinearRegression
+import matplotlib.pyplot as plt
 
+x=np.array([1,3,2,6,9,7,8,2]).reshape(-1,1)
+y=np.array([50,73,66,88,97,75,83,60])
+
+model=LinearRegression()
+model.fit(x,y)
+y_=model.predict(x)
+
+print("Slope:",model.coef_[0])
+print("Intercept:",model.intercept_)
+
+plt.scatter(x,y,color='grey',label="Actual Marks")
+plt.plot(x,y_,color='blue',label="Predicted Marks")
+plt.xlabel("Total Number of Materials used")
+plt.ylabel("Marks Obtained")
+plt.legend()
+plt.show()
 ## Output:
-![simple linear regression model for predicting the marks scored](sam.png)
+![alt text](<Screenshot 2026-01-27 214644.png>)
 
 
 ## Result:
