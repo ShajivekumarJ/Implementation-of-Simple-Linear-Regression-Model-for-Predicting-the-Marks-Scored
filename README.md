@@ -19,7 +19,7 @@ Program to implement the simple linear regression model for predicting the marks
 Developed by: SHAJIVE KUMAR J
 RegisterNumber:  25018897
 */
-```
+~~~
 import numpy as np
 from sklearn.linear_model import LinearRegression
 import matplotlib.pyplot as plt
