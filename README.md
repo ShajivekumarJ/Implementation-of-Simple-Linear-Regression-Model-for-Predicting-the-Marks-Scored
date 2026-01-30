@@ -41,6 +41,7 @@ plt.xlabel("Total Number of Materials used")
 plt.ylabel("Marks Obtained")
 plt.legend()
 plt.show()
+~~~
 ## Output:
 ![alt text](<Screenshot 2026-01-27 214644.png>)
 
