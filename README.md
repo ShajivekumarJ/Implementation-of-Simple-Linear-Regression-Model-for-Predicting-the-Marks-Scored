@@ -14,11 +14,11 @@ To write a program to predict the marks scored by a student using the simple lin
 4. Use the trained model to predict marks on the testing data and display the predicted output
 
 ## Program:
-/*
+```
 Program to implement the simple linear regression model for predicting the marks scored.
 Developed by: SHAJIVE KUMAR J
 RegisterNumber:  25018897
-*/
+```
 ~~~
 import numpy as np
 from sklearn.linear_model import LinearRegression
